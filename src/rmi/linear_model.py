@@ -1,29 +1,3 @@
-# src/rmi/linear_model.py
-
-# -----------------------------------------------------------------------------
-# ¿Qué es un Modelo Lineal? (y = mx + b)
-# -----------------------------------------------------------------------------
-# Un modelo lineal es una de las formas más simples de "aprender" de los datos.
-# Imagina que tienes una serie de puntos en una gráfica, y quieres dibujar una
-# línea recta que represente lo mejor posible la relación entre esos puntos.
-# Esa línea es nuestro modelo lineal, y se describe con la famosa ecuación:
-#
-#    y = mx + b
-#
-# Donde:
-#   - 'y' es el valor que queremos predecir (la salida).
-#   - 'x' es el valor que conocemos (la entrada).
-#   - 'm' es la "pendiente" de la línea: nos dice qué tan inclinada está.
-#         Si 'm' es grande, la línea sube o baja muy rápido.
-#         Si 'm' es cero, la línea es horizontal.
-#   - 'b' es el "intercepto" o "corte con el eje Y": es el punto donde
-#         la línea cruza el eje vertical (cuando x es 0).
-#
-# El objetivo de la "regresión lineal" es encontrar los mejores valores de 'm' y 'b'
-# que hagan que nuestra línea se ajuste lo más posible a los puntos de datos.
-# Usaremos el método de "Mínimos Cuadrados" para encontrar esos valores.
-# -----------------------------------------------------------------------------
-
 class LinearModel:
     """
     Implementa un modelo de regresión lineal simple (y = mx + b)

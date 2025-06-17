@@ -1,13 +1,3 @@
-# src/rmi/rmi_model.py
-
-# -----------------------------------------------------------------------------
-# Implementaciones básicas sin librerías especializadas
-# -----------------------------------------------------------------------------
-# Para este proyecto, necesitamos algunas herramientas matemáticas básicas
-# que normalmente encontraríamos en librerías como NumPy. Sin embargo,
-# para cumplir con el requisito de "desde cero", las implementaremos aquí.
-# -----------------------------------------------------------------------------
-
 def _calculate_mean(data_list):
     """Calcula la media (promedio) de una lista de números."""
     if not data_list:

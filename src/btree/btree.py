@@ -1,38 +1,3 @@
-# src/btree/btree.py
-
-# -----------------------------------------------------------------------------
-# ¿Qué es un B-Tree? (Árbol B)
-# -----------------------------------------------------------------------------
-# Un B-Tree es una estructura de datos tipo árbol muy especial y eficiente,
-# diseñada para almacenar y organizar grandes cantidades de datos que residen
-# en memoria externa (como un disco duro).
-#
-# A diferencia de un árbol binario de búsqueda simple, donde cada nodo tiene
-# como máximo dos hijos, los nodos de un B-Tree pueden tener muchos hijos.
-# Esto reduce la "altura" del árbol (la distancia desde la raíz hasta las hojas),
-# lo que es crucial porque cada "nivel" del árbol generalmente requiere una
-# operación de lectura de disco, que es muy lenta.
-#
-# Propiedades Clave de un B-Tree:
-# 1.  **Orden (o Grado):** Cada B-Tree tiene un "orden" (a menudo llamado 't' o 'm').
-#     Esto determina el número máximo de hijos que puede tener un nodo y el
-#     número mínimo y máximo de claves que puede contener.
-# 2.  **Todos los caminos son iguales:** Todas las hojas (los nodos finales)
-#     están al mismo nivel de profundidad en el árbol. Esto garantiza que la
-#     búsqueda siempre tome una cantidad de tiempo similar.
-# 3.  **Nodos balanceados:** Cada nodo (excepto la raíz y las hojas) tiene un
-#     número mínimo y máximo de claves y de hijos. Esto asegura que el árbol
-#     permanezca "balanceado" y eficiente, incluso después de muchas inserciones
-#     o eliminaciones.
-# 4.  **Ordenamiento:** Las claves dentro de cada nodo están ordenadas.
-#     Las claves en los subárboles izquierdos son menores, y en los derechos, mayores.
-#
-# Para este proyecto, implementaremos un B-Tree clásico en memoria. Aunque
-# su principal ventaja es para almacenamiento en disco, entender su estructura
-# y operaciones es fundamental.
-# -----------------------------------------------------------------------------
-
-# Definimos una clase para los nodos individuales de nuestro B-Tree.
 class BTreeNode:
     """
     Representa un nodo dentro del B-Tree.

@@ -1,7 +1,3 @@
-# src/benchmark/run_benchmark.py
-
-# Importamos las clases y funciones que vamos a comparar y medir.
-# Vienen de nuestros propios módulos, implementados desde cero.
 from ..rmi.rmi_model import RMI # Nuestro Índice de Modelo Recursivo
 from ..btree.btree import BTree # Nuestro B-Tree
 from ..rmi.utils import generate_sorted_data, measure_time # Utilidades para datos y tiempo
@@ -9,29 +5,9 @@ from ..rmi.utils import generate_sorted_data, measure_time # Utilidades para dat
 # Importamos sys para manejar el path si es necesario en entornos específicos
 import sys
 import os
-
-# Ajuste del PATH para asegurar que los módulos se encuentren correctamente
-# Esto es útil cuando se ejecutan scripts desde diferentes directorios.
-# Agregamos la carpeta 'src' al path de Python.
-# Si el script se ejecuta desde 'algoritmos-proyecto7-pc3/',
-# sys.path.append(os.path.abspath('.')) debería ser suficiente.
-# Si se ejecuta desde 'algoritmos-proyecto7-pc3/src/benchmark/',
-# entonces sys.path.append(os.path.abspath('../../')) sería más apropiado.
-# Para esta demostración, asumimos una ejecución desde la raíz del proyecto.
-# Una forma más robusta es usar el path relativo del propio archivo.
 script_dir = os.path.dirname(__file__) # Directorio actual del script
 project_root = os.path.abspath(os.path.join(script_dir, '..', '..')) # Sube dos niveles para la raíz del proyecto
 sys.path.insert(0, project_root) # Añade la raíz del proyecto al path de Python
-
-# Es importante que las importaciones relativas (e.g., from ..rmi.rmi_model)
-# funcionen, lo que a menudo requiere que el módulo 'src' se trate como un paquete
-# (tener un __init__.py en src/ y sus subcarpetas) y que se ejecute desde
-# la raíz del proyecto usando `python -m src.benchmark.run_benchmark`.
-# Para una ejecución simple `python src/benchmark/run_benchmark.py`,
-# el ajuste de sys.path es crucial.
-
-# -----------------------------------------------------------------------------
-# Script de Benchmarking General
 # -----------------------------------------------------------------------------
 # Este script es el "laboratorio" de nuestro proyecto. Aquí es donde ponemos
 # a prueba nuestros algoritmos (RMI y B-Tree) para ver qué tan bien funcionan

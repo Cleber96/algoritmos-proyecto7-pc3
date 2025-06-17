@@ -1,23 +1,5 @@
-# src/rmi/utils.py
-
 import time # Necesitamos el módulo 'time' para medir el tiempo de ejecución.
 import random # Necesitamos el módulo 'random' para generar datos.
-
-# -----------------------------------------------------------------------------
-# Funciones Utilitarias - Nuestras "Herramientas Básicas"
-# -----------------------------------------------------------------------------
-# En cualquier proyecto de programación, es útil tener un conjunto de funciones
-# que realizan tareas comunes y repetitivas. A estas funciones las llamamos
-# "utilidades" o "helpers" porque nos ayudan en nuestro trabajo principal.
-#
-# Para este proyecto de algoritmos, nuestras utilidades nos ayudarán a:
-# 1. Generar **datos de prueba** ordenados, que son esenciales para el RMI y el B-Tree.
-# 2. **Medir cuánto tiempo** tardan en ejecutarse diferentes partes de nuestro código,
-#    lo cual es crucial para comparar el rendimiento de nuestros algoritmos.
-#
-# Hemos implementado estas funciones desde cero, sin depender de librerías externas
-# como NumPy, para mostrar cómo se harían a un nivel más fundamental.
-# -----------------------------------------------------------------------------
 
 
 def generate_sorted_data(size, min_val=0, max_val=1_000_000):

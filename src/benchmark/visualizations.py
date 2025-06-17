@@ -1,24 +1,3 @@
-# src/benchmark/visualizations.py
-
-# -----------------------------------------------------------------------------
-# Visualización de Resultados - Nuestros "Gráficos Sencillos"
-# -----------------------------------------------------------------------------
-# Este script se encarga de tomar los números que obtenemos del benchmarking
-# y convertirlos en algo más fácil de entender visualmente.
-#
-# ¿Por qué visualizamos datos?
-# - **Claridad:** Los números puros pueden ser difíciles de interpretar,
-#   especialmente cuando hay muchos. Un gráfico nos da una idea rápida.
-# - **Tendencias:** Nos ayuda a ver patrones, como qué algoritmo es más
-#   rápido o cómo el rendimiento cambia con más datos.
-# - **Impacto:** Permite a una audiencia entender el "por qué" de nuestros
-#   resultados de manera intuitiva.
-#
-# Dado que estamos trabajando "desde cero" sin librerías avanzadas como Matplotlib,
-# crearemos visualizaciones muy básicas usando caracteres de texto (ASCII art).
-# En un proyecto real, se usarían librerías de gráficos profesionales.
-# -----------------------------------------------------------------------------
-
 def _normalize_values(values, scale_factor=50):
     """
     Normaliza una lista de valores para que se ajusten a una escala de visualización.

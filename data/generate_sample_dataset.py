@@ -1,16 +1,5 @@
-# data/generate_sample_dataset.py
-
-# Importamos NumPy, la librería especializada para trabajar con arrays numéricos.
-# Aunque nuestras implementaciones de RMI y B-Tree son "desde cero",
-# NumPy es la herramienta estándar y eficiente para GENERAR y manipular
-# grandes volúmenes de datos numéricos en Python.
 import numpy as np
-# Importamos 'os' para interactuar con el sistema operativo,
-# como crear directorios si no existen.
 import os          
-
-# -----------------------------------------------------------------------------
-# ¿Para qué sirve este script? (Generación del Conjunto de Datos de Ejemplo)
 # -----------------------------------------------------------------------------
 # Este script es como nuestra "fábrica de datos". Su único propósito es crear
 # un archivo llamado 'sample_dataset.npy' que contendrá un conjunto muy grande

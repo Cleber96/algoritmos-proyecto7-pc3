@@ -1,12 +1,12 @@
-# Proyecto: Recursive Model Index (RMI) sobre array de enteros con comparativa a B-Tree
+# Proyecto7: Recursive Model Index (RMI) sobre array de enteros con comparativa a B-Tree
 
 ## Estructura del proyecto (carpetas y archivos)
 
 ```bash
 rmi_vs_btree_project/
 ├── README.md                         # Documentación principal del proyecto
-├── requirements.txt                 # Dependencias del proyecto (si aplica)
-├── setup.py                         # Script de instalación (opcional)
+├── requirements.txt                 # Dependencias del proyecto
+├── setup.py                         # Script de instalación
 ├── src/                             # Código fuente principal
 │   ├── __init__.py
 │   ├── rmi/                         # Módulo de RMI
@@ -32,9 +32,9 @@ rmi_vs_btree_project/
 ├── profiling/                       # Scripts para análisis de rendimiento
 │   └── profile_memory_time.py
 ├── docs/
-│   ├── informe_tecnico.pdf         # Informe técnico final (3–5 páginas)
+│   ├── informe_tecnico.pdf         # Informe técnico final
 │   ├── presentacion.pdf            # Presentación para exposición
-│   └── referencias.bib             # Bibliografía en BibTeX (opcional)
+│   └── referencias.bib             # Bibliografía
 ├── data/                            # Datos sintéticos o reales
 │   └── sample_dataset.npy
 └── notebook/                        # Jupyter Notebooks explicativos del desarrollo

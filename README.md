@@ -139,13 +139,3 @@ rmi_vs_btree_project/
   * `profile_memory_time.py` que genere reportes para cada tamaño de entrada.
 
 ---
-
-## Recomendaciones finales
-
-* Asegúrate de usar un estilo de codificación uniforme (PEP8, docstrings).
-* Prioriza claridad y modularidad: funciones pequeñas, bien nombradas, reutilizables.
-* Usa datos sintéticos (arrays ordenados grandes) para pruebas de escalabilidad.
-* Documenta bien las decisiones de diseño: por qué 2 niveles en el RMI, por qué segmentos fijos, etc.
-* Justifica por qué RMI puede ser más eficiente que B-Trees en ciertos casos: baja entropía, datos predecibles, etc.
-
-Este esquema te permitirá no solo cumplir con todos los requerimientos del proyecto, sino también destacarte por claridad, organización y rigor empírico.
